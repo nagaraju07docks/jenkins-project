@@ -1,5 +1,6 @@
 job('NodeJS example') {
     	scm {
+		label('jennode')
         	git('git://github.com/gvenkat09/nodejs-app.git') {  node -> // is hudson.plugins.git.GitSCM
             	node / gitConfigName('DSL User')
             	node / gitConfigEmail('jenkins-dsl@gmail.com')
